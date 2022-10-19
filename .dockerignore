@@ -1,0 +1,6 @@
+.git
+.github
+.vs
+.vscode
+node_modules
+obj
