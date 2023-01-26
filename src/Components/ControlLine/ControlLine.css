@@ -1,0 +1,16 @@
+.controlLine {
+    display: flex;
+    border-width: 2px;
+    border-style: none none solid none;
+    border-color: #323232
+}
+
+    .controlLine > * {
+        color: #FFF8EC;
+    }
+
+.controlLine > .breadcrumbs {
+        width: 85%;
+        float: right;
+        padding: 0px 10px 0px;
+    }

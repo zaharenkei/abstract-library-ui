@@ -1,0 +1,37 @@
+.breadcrumb {
+    list-style: none;
+    text-align: left;
+}
+
+    .breadcrumb li {
+        display: inline;
+        color: #323232;
+    }
+
+        .breadcrumb li + li:before {
+            padding: 8px;
+            color: #323232;
+            content: "/\00a0";
+        }
+
+        .breadcrumb li a {
+            color: #323232;
+            text-decoration: none;
+            line-height: 48px
+        }
+
+            .breadcrumb li a:hover {
+                color: darkgray;
+            }
+
+    .breadcrumb > .buttonItem {
+        height: 20px;
+        width: 20px;
+        margin: 5px;
+        list-style: none;
+    }
+
+        .breadcrumb > .buttonItem > .buttonImage {
+            height: inherit;
+            width: inherit;
+        }

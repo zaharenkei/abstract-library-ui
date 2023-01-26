@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    border-width: 2px;
+    border-style: none none solid none;
+    border-color: #323232
+}
+
+    .header > .titleSection {
+        width: calc(100% - 200px);
+        height: inherit;
+    }
+
+        .header > .titleSection > .titleLogo {
+            float: left;
+            height: inherit;
+            margin: 0px 5px 0px;
+        }
+
+        .header > .titleSection > .titleText {
+            float: left;
+            font-size: 45px;
+            color: #323232;
+            margin: 25px 0px 0px 25px;
+        }
+
+    .header > .settingsPanel {
+        width: 200px;
+        height: inherit;
+        float: right;
+    }
+
+        .header > .settingsPanel > .buttonList {
+            list-style: none;
+            display: flex;
+            padding: 50px 20% 18px 20%;
+        }
+
+            .header > .settingsPanel > .buttonList > .buttonItem {
+                height: 20px;
+                width: 20px;
+                margin: 5px;
+                list-style: none;
+            }
+
+                .header > .settingsPanel > .buttonList > .buttonItem > .buttonImage {
+                    height: inherit;
+                    width: inherit;
+                }

@@ -1,0 +1,55 @@
+* {
+    background-color: beige;
+    text-align: center;
+    font-family: serif;
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    position: relative;
+}
+
+.App {
+    height: 100%;
+    width: 100%;
+}
+
+    .App > .header {
+        height: 98px;
+        width: 100%;
+        top: 0px;
+        position: absolute;
+        border-width: 2px;
+        border-style: none none solid none;
+        border-color: #323232
+    }
+
+    .App > .controlLine {
+        height: 48px;
+        width: 100%;
+        top: 100px;
+        position: absolute;
+    }
+
+    .App > .body {
+        height: 80%;
+        width: 100%;
+        top: 150px;
+        bottom: 50px;
+        position: absolute;
+    }
+
+    .App > .footer {
+        height: 50px;
+        width: 100%;
+        bottom: 0;
+        position: absolute;
+    }

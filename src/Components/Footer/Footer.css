@@ -1,0 +1,6 @@
+.footer {
+    display: flex;
+    border-width: 2px;
+    border-style: solid none none none;
+    border-color: #323232
+}
