@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import config from "../../Configuration/config.json";
 import './Selector.css';
 
 class SelectorBlock extends React.Component {
@@ -13,10 +14,10 @@ class SelectorBlock extends React.Component {
 
     async initCategories() {
         try {
-            const url = "https://5065939d-4db5-4c81-a416-ed91e25b1e42.mock.pstmn.io/categories/";
+            const url = config.JAPI_URL + "/categories/1";
             await fetch(url)
                 .then((response) => response.json())
-                .then((jsonData) => this.setState({ categories: jsonData.categories }))
+                .then((jsonData) => this.setState({ categories: jsonData.categories }));
         } catch (error) {
             console.log(error);
         } finally {
@@ -31,12 +32,10 @@ class SelectorBlock extends React.Component {
 
     render() {
         const {categories} = this.state;
-        console.log(categories);
-        console.log(Array.isArray(categories));
 
         let components = []; 
         for (let category of categories){
-            components.push(<div id="selectorItem" ownid="{category.id}" parentid="{category.parentId}"><a href="#">{category.name}</a></div>);
+            components.push(<div id="selectorItem" key={category.id} parent={category.parentId}><a href="#">{category.name}</a></div>);
         }
 
         return (

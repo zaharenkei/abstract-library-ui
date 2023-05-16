@@ -20,4 +20,7 @@
   <ItemGroup>
     <None Remove="src\Components\Controls\**" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ui.sln" />
+  </ItemGroup>
 </Project>
